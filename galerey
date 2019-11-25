@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="uft-8">
+		<link rel="stylesheet" href="style2.css">
+		<title>Галерея</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body>
+		<div id="one">
+		<span></span>
+		</div>
+		<div id="two">
+			<div id="two-one" >
+				<div class="menu"><span>Главная</span></div>
+				<div class="menu"><span>Обратная связь</span></div>
+				<div class="menu"><span>Комментарий</span></div>
+			</div>
+			</div><div id="three" >
+				<div class="left"><span></span></div><div class="right"><span>галерея</span></div>
+				<div class="left"><span>галерея</span></div><div class="right"><span>галерея</span></div>
+				<div class="left"><span>галерея</span></div><div class="right"><span>галерея</span></div>
+			</div>
+		<div id="foor">
+			<div id="foor-one">
+			<i class="material-icons">computer</i>
+			<span>Ссылки на страницы</span>
+			</div>
+		</div>
+	</body>
+</html>
