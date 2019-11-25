@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<meta charset="uft-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Обратная связь</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body>
+		<div id="one">
+		<span>галерея</span>
+		</div>
+		<div id="two">
+			<div id="two-one" >
+				<div class="menu"><span>Главная</span></div>
+				<div class="menu"><span>Галерея</span></div>
+				<div class="menu"><span>Комментарии</span></div>
+			</div>
+			</div><div id="three" >
+			<span>Здесь форма для отправки сообщения или ссылки на сайты</span>
+			</div>
+		<div id="foor">
+			<div id="foor-one">
+			<i class="material-icons">computer</i>
+			<p>Ссылки на сайты</p>
+
+			</div>
+		</div>
+	</body>
+</html>
