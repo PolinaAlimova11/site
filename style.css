@@ -1,76 +1,146 @@
-.menu {
-	height: 50px;
-    width: 90%;
-	background-color: rgb(90,90,90);
-	display: block;
-	margin: 8px;
-}
-span {
-	color: white;
-}
 #one {
+	display: block;
+	background-color: rgb(20,20,20);
+	width: 100%;
+	height: 40px;
 	margin: 0;
+	text-align: right;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+.a1 {
 	display: inline-block;
-	height: 300px;
-   width: 100%;
-   background-color: rgb(10,10,10);
+	background-color: rgb(50,50,50);
+	width: 15%;
+	height: 18px;
+	text-align:center;
+	color: rgb(230,230,230);
+	padding: 10px 0;
+}
+.a2 {
+	color: rgb(30,30,30);
+}
+#sould {
+	width: 100%;
 }
 #two {
-	
-	display: inline-block;
-	height: 600px;
-   width: 20%;
-   background-color: rgb(250,250,250);
-}
-
-#two-one {
-	margin-top: 20px;
-	margin-left: 5%;
 	display: block;
-	height: 175px;
-   width: 90%;
-   background-color: rgb(40,40,40);
+	background: rgb(22,19,19) /*url(sould.png)*/;
+	width: 100%;
+	height: 300px;
+	margin: 0;
+	text-align:center;
+	/*background-attachment: fixed;  /*Фон страницы фиксируется */ 
+	/*background-repeat: repeat-x;*/
+	background-size: 100%;
 }
-
-#three {
+#reg {
+	display: block;
+	background-color: rgb(20,20,20);
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	color: rgb(230,230,230);
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	padding: 15px, 0;
+}
+.cart {
 	display: inline-block;
-	height: 600px;
-   width: 80%;
-   background-color: rgb(70,70,70);
+	background-color: rgb(50,50,50);
+	width: 30%;
+	height: 200px;
+	text-align:center;
+	color: rgb(230,230,230);
+	padding: 10px;
+}
+.cart2 {
+	display: block;
+	background-color: rgb(230,230,230);
+	width: 100%;
+	height: 40px;
+	text-align:center;
+}
+#three {
+	display: block;
+	background-color: rgb(120,120,120);
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	text-align:center;
 }
 
 #three-one {
-	margin-top: 20px;
-	margin-left: 5%;
-	display: block;
-	height: 400px;
-   width: 80%;
-   background-color: rgb(100,100,100);
+	display: inline-block;
+	background-color: rgb(30,30,30);
+	width: 20%;
+	height: 40px;
+	text-align:center;
+	color: rgb(230,230,230);
+	padding: 5px 0;
+	font-size: 30px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+#three-two {
+	display: inline-block;
+	background-color: rgb(30,30,30);
+	width: 20%;
+	height: 40px;
+	text-align:center;
+	color: rgb(230,230,230);
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	padding: 5px 0;
+}
+
+#three-three {
+	display: inline-block;
+	background-color: rgb(30,30,30);
+	width: 20%;
+	height: 40px;
+	text-align:center;
+	color: rgb(230,230,230);
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	padding: 5px 0;
+}
+
+#three-foor {
+	display: inline-block;
+	background-color: rgb(30,30,30);
+	width: 20%;
+	height: 40px;
+	text-align:center;
+	color: rgb(230,230,230);
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	padding: 5px 0;
 }
 
 #foor {
-	display: inline-block;
-	height: 150px;
-   width: 100%;
-   background-color: rgb(140,140,140);
+	display: block;
+	background-color: rgb(230,230,230);
+	width: 60%;
+	height: 550px;
+	margin: 0 15% 0 15%;
+	text-align:center;
+	padding: 50px 40px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
-#foor-one {
-	margin-left: 10%;
-	margin-top: 4%;
+#fife {
 	display: block;
-	height: 60px;
-   width: 40%;
-   background-color: rgb(200,200,200);
-   padding: 10px;
-}
-#five {
+	background-color: rgb(60,60,60);
+	width: 100%;
+	height: 70px;
 	margin: 0;
-	display: inline-block;
-	height: 80px;
-   width: 100%;
-   background-color: rgb(10,10,10);
+	text-align:center;
+	padding: 20px 0;
+	color: rgb(30,30,30);
+	font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 * {
 	margin: 0;
+	background-color: (22,19,19)
 }
