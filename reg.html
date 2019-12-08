@@ -1,4 +1,4 @@
-<html>
+<<html>
 	<head>
 		<meta charset="uft-8">
 		<link rel="stylesheet" href="style.css">
@@ -11,22 +11,26 @@
 		</div>
 		<div id="three">
 			<a href="main.html"><div id="three-one"><p>главная</p></div></a>
-			<a href="gallery.html"><div id="three-two"><p>галерея</p></div></a>
+			<a href="gallery.php"><div id="three-two"><p>галерея</p></div></a>
 			<a href="comm.html"><div id="three-three"><p>комментарии</p></div></a>
-			<a href="back.html"><div id="three-foor"><p>профиль</p></div></a>
+			<a href="back.php"><div id="three-foor"><p>профиль</p></div></a>
 		</div>
 		<div id="reg">
 			<h1>Ещё не с нами? Присоединяйся!</h1>
 		</div>
 		
-		<div id="foor" style="height:250;">
+		<div id="foor" style="height:auto;">
 			<div class="reg" >
 			<h1>Регистрация</h1>
-			<form action="ind.php" method="post">
-				<input type="text"  name="login"  placeholder="Имя"><br>
-				<input type="text"  name="name" placeholder="Почта"><br>
-				<input type="text"  name="name"  placeholder="Логин"><br>
-				<input type="password"  name="password"  placeholder="Пароль"><br>
+			<form action="sait_reg.php" method="post">
+				<input type="text"  name="name"  placeholder="Имя"><br>
+				<p>Должно начинаться с латинской буквы, содержать только символы латинского алфавита, цифры и знак “_”, иметь не менее 6 символов, </p>
+				<input type="text"  name="email" placeholder="Почта"><br>
+				<p>Пароль должен содержать хотя бы 1 строчную и заглавную буквы латинского алфавита, цифру и один знаков пунктуации или один из символов: %, $, #, @, &, *, ^, |, \, /, ~, [, ], {, }, состоять не менее, чем из 8 символов</p>
+				<input type="text"  name="login"  placeholder="Логин"><br>
+				<input type="password"  name="pass1"  placeholder="Пароль"><br>
+				<p>Повторите пароль</p>
+				<input type="password"  name="pass2"  placeholder="Пароль"><br>
 				<button class="btn btn-success" type="submit">Зарегистрироваться</button>
 			</form> <br>
 			<p>Уже зарегистрирован? <a href="input.html">Войти</a></p>
