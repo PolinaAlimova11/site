@@ -20,13 +20,22 @@
 		</div>
 		
 		<div id="foor" style="text-align:left;">
-			<form action="comm_obr.php" method="post">
-			 <p><b>Введите ваш комментарий:</b></p> <br>
+			<form action="user_comm_obr.php" method="post">
+			 <p><b>Введите ваш комментарий по поводу творчества SoulD:</b></p> <br>
 			<textarea name="comment" class="form1"></textarea> <br>
+			<p><b>Оцените творчество:</b></p> <br>
+			<select name="type" placeholder="Техника">
+					<option >0</option>
+					<option >1</option>
+					<option >2</option>
+					<option >3</option>
+					<option >4</option>
+					<option >5</option>
+				</select><br><br>
 			<button class="btn btn-success" type="submit">Отправить</button>
 			</form>
 			<br><br>
-			<form action="comm_obr.php" method="post">
+			<form action="pred_obr.php" method="post">
 			 <p><b>Хотите что-то предложить? Сообщения автору:</b></p> <br>
 			<textarea name="obr" class="form1"></textarea> <br>
 			<button class="btn btn-success" type="submit">Отправить</button>
