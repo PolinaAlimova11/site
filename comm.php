@@ -1,8 +1,12 @@
+<?php
+	session_start();
+?>
 <html>
 	<head>
 		<meta charset="uft-8">
 		<link rel="stylesheet" href="style.css">
 		<title>Ваш комментарий</title>
+			<link rel="shortcut icon" href="glav.jpg" type="image/jpg">
 	</head>
 	<body>
 	<div id="zero">
@@ -13,18 +17,21 @@
 		
 		
 		<div id="three">
-			<a href="main.html"><div id="three-one"><p>главная</p></div></a>
+			<a href="main.php"><div id="three-one"><p>главная</p></div></a>
 			<a href="gallery.php"><div id="three-two"><p>галерея</p></div></a>
-			<a href="comm.html"><div id="three-three"><p>комментарии</p></div></a>
+			<a href="comm.php"><div id="three-three"><p>комментарии</p></div></a>
 			<a href="back.php"><div id="three-foor"><p>профиль</p></div></a>
 		</div>
 		
 		<div id="foor" style="text-align:left;">
-			<form action="user_comm_obr.php" method="post">
+		<?php
+			if (isset($_SESSION['name'])and $_SESSION['status']=='adm' or $_SESSION['status']=='user'):
+		?>
+			<form action="us_com_obr.php" method="post">
 			 <p><b>Введите ваш комментарий по поводу творчества SoulD:</b></p> <br>
-			<textarea name="comment" class="form1"></textarea> <br>
+			<textarea name="comment" class="form1" style="height: 100px;"></textarea> <br>
 			<p><b>Оцените творчество:</b></p> <br>
-			<select name="type" placeholder="Техника">
+			<select name="love" placeholder="Техника">
 					<option >0</option>
 					<option >1</option>
 					<option >2</option>
@@ -35,11 +42,23 @@
 			<button class="btn btn-success" type="submit">Отправить</button>
 			</form>
 			<br><br>
+		<?php
+			elseif (isset($_SESSION['name'])and $_SESSION['status']=='block'):
+		?>
+			<h5>Вы заблокированы. Обратитесь к администратору, для выяснения причины блокировки</h5>
+		<?php 
+			else:?>
+			<h3>Для того, чтобы оставить комментарий, нужно авторизоваться</h3>
+		<?php endif; ?>
+		<?php
+			if (isset($_SESSION['name'])and $_SESSION['status']=='adm' or $_SESSION['status']=='user'):
+		?>
 			<form action="pred_obr.php" method="post">
 			 <p><b>Хотите что-то предложить? Сообщения автору:</b></p> <br>
-			<textarea name="obr" class="form1"></textarea> <br>
+			<textarea name="obr" class="form1" style="height: 100px;"></textarea> <br>
 			<button class="btn btn-success" type="submit">Отправить</button>
 			</form>
+		<?php endif; ?>
 		</div>
 		
 		<div id="fife">
